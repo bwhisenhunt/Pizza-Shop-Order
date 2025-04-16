@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CS Final Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Create Your Own Pizza</h1>
+    <div class="createOrder">
+        <h3>Available Crusts</h3>
+        <p>Original</p>
+        <p>Thin Crust</p>
+
+        <h3>Available Sauces</h3>
+        <p>Classic Tomato</p>
+        <p>Spicy Marinara</p>
+        <p>White Garlic Sauce</p>
+
+        <h3>Available Toppings</h3>
+        <p>Chicken</p>
+        <p>Pepperoni</p>
+        <p>Cheese</p>
+        <p>Mushrooms</p>
+        <p>Baby Spinach</p>
+        <p>Olives</p>
+    </div>
+    <div class="form">
+        <form id="" pizzaForm>
+
+            <div class="form-group">
+                <label for="crust">Choose Your Crust:</label>
+                <select id="crust" required>
+                    <option value="">Select A Crust</option>
+                    <option value="Original">Original</option>
+                    <option value="Thin Crust">Thin Crust</option>
+                </select>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="sauce">Choose Your Sauce:</label>
+                <select id="sauce" required>
+                    <option value="">Select A Sauce</option>
+                    <option value="Classic Tomato">Classic Tomato</option>
+                    <option value="Spicy Marinara">Spicy Marinara</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="form-group topping-inputs">
+                <div class="topping-input">
+                    <label for="topping1">Topping 1:</label>
+                    <select id="topping1">
+                        <option value="">Select a topping</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Pepperoni">Pepperoni</option>
+                        <option value="Cheese">Cheese</option>
+                        <option value="Mushrooms">Mushrooms</option>
+                        <option value="Baby Spinach">Baby Spinach</option>
+                        <option value="Olives">Olives</option>
+                    </select>
+                </div>
+                <br>
+                <div class="topping-input">
+                    <label for="topping2">Topping 2:</label>
+                    <select id="topping2">
+                        <option value="">Select a topping</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Pepperoni">Pepperoni</option>
+                        <option value="Cheese">Cheese</option>
+                        <option value="Mushrooms">Mushrooms</option>
+                        <option value="Baby Spinach">Baby Spinach</option>
+                        <option value="Olives">Olives</option>
+                    </select>
+                </div>
+                <br>
+                <div class="topping-input">
+                    <label for="topping3">Topping 3:</label>
+                    <select id="topping3">
+                        <option value="">Select a topping</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Pepperoni">Pepperoni</option>
+                        <option value="Cheese">Cheese</option>
+                        <option value="Mushrooms">Mushrooms</option>
+                        <option value="Baby Spinach">Baby Spinach</option>
+                        <option value="Olives">Olives</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" id="btn">Create Order</button>
+        </form>
+    </div>
+
+    <div id="order">
+        <p>Completed Pizza Order: </p>
+
+        <div id="pizzaOrder"></div>
+
+        <div id="toppings"></div>
+
+        <p>Sales Total: </p>
+        <div id="total">$</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
